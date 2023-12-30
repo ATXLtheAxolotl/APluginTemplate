@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.12)
-project(ItemInformation)
+project(APluginTemplate)
 set(MOD_VERSION "1.0.0")
 
 set(CMAKE_CXX_STANDARD 20)
@@ -30,5 +30,5 @@ set_property(
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE "${AmethystFolder}/lib/fmt.lib")
-target_link_libraries(${PROJECT_NAME} PRIVATE "${AmethystFolder}/lib/minhook.x64.lib")
+target_link_libraries(${PROJECT_NAME} PRIVATE "${AmethystFolder}/lib/libMinHook.x64.lib")
 target_link_libraries(${PROJECT_NAME} PRIVATE ${AMETHYST_API})
